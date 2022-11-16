@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  transition: background 0.3s linear;
+}
+
+.mode {
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+}
+
+
+.mode button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+
+.timer {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.6rem;
+  color: #323238;
+  line-height: 14.8rem;
+}
+
+.controls {
+  display: flex;
+  gap: 4rem;
+}
+
+.controls button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.cardSonds {
+  display: grid;
+  grid-template-columns: repeat(2, 13.8rem);
+  gap: 3.2rem;
+}
+
+.cardSonds div {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  width: 13.8rem;
+  height: 15.2rem;
+  padding: 2.4rem;
+
+  background: #e1e1e6;
+  border-radius: 2.4rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cardSonds div:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(7px 10px 5px rgba(0,0,0,.5));
+}
+
+.cardForest button, .cardRain button, .cardCoffee button, .cardFire button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+#forest-volume, #rain-volume, #coffee-volume, #fire-volume {
+  appearance: none;
+  width: 90px;
+  height: 4px;
+  border-radius: 5px;
+  background: #323238;
+  cursor: pointer;
+  
+  
+}
+
+*::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #323238;
+  cursor: pointer;
+}
+
+/* botao ativo */
+
+.cardForest.active {
+  background: #02799D;
+}
+
+.cardRain.active {
+  background: #02799D;
+}
+
+.cardCoffee.active {
+  background: #02799D;
+}
+
+.cardFire.active {
+  background: #02799D;
+}
+
+.cardForest.active button svg path {
+  fill: #ffffff;
+}
+
+.cardRain.active button svg path {
+  fill: #ffffff;
+}
+
+.cardCoffee.active button svg path {
+  fill: #ffffff;
+}
+
+.cardFire.active button svg path {
+  fill: #ffffff;
+}
+
+.cardForest.active #forest-volume {
+  background: #ffffff;
+}
+
+.cardRain.active #rain-volume {
+  background: #ffffff;
+}
+
+.cardCoffee.active #coffee-volume {
+  background: #ffffff;
+}
+
+.cardFire.active #fire-volume {
+  background: #ffffff;
+}
+
+.cardForest.active *::-webkit-slider-thumb {
+  background: #ffffff;
+}
+
+.cardRain.active *::-webkit-slider-thumb {
+  background: #ffffff;
+}
+
+.cardCoffee.active *::-webkit-slider-thumb {
+  background: #ffffff;
+}
+
+.cardFire.active *::-webkit-slider-thumb {
+  background: #ffffff;
+}
+
+/* Dark Mode */
+
+body.dark {
+  background: #121214;
+}
+
+body.dark .timer {
+  color: #ffffff;
+}
+
+body.dark .controls button svg path {
+  fill: #c4c4cc;
+}
+
+body.dark .cardSonds div {
+  background: #29292e;
+}
+
+body.dark .cardSonds div button svg path {
+  fill: #c4c4cc;
+}
+
+body.dark .cardSonds #forest-volume {
+  background: #ffffff;
+}
+
+body.dark .cardSonds #rain-volume {
+  background: #ffffff;
+}
+
+body.dark .cardSonds #coffee-volume {
+  background: #ffffff;
+}
+
+body.dark .cardSonds #fire-volume {
+  background: #ffffff;
+}
+
+body.dark *::-webkit-slider-thumb {
+  background: #ffffff;
+}
+
+body.dark .cardForest.active {
+  background: #02799D;
+}
+
+body.dark .cardRain.active {
+  background: #02799D;
+}
+
+body.dark .cardCoffee.active {
+  background: #02799D;
+}
+
+body.dark .cardFire.active {
+  background: #02799D;
+}
+
+body.dark .cardForest.active button svg path {
+  fill: #ffffff;
+}
+
+body.dark .cardRain.active button svg path {
+  fill: #ffffff;
+}
+
+body.dark .cardCoffee.active button svg path {
+  fill: #ffffff;
+}
+
+body.dark .cardFire.active button svg path {
+  fill: #ffffff;
+}
+
+
+
