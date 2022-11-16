@@ -3,7 +3,7 @@
 
 - Desafio "FocusTimer" do Explorer da Rocketseat
 
-
+![Desafio "FocusTimer"](https://github.com/JoaoPdev00/Focus-Timer/blob/main/assets/Focus-timer.png)
 
 
 
